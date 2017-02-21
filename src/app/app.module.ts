@@ -33,7 +33,7 @@ import { AppComponent } from './app.component';
     DashboardComponent
   ],
 
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent], // The main application view (root component). Only the root module should set the bootstrap prop.
 
   providers: [HeroService] // Creators of services
 })
