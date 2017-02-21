@@ -1,0 +1,6 @@
+# Files
+/.editorconfig
+
+# Folders
+/node_modules/
+/.vscode/
