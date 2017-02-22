@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { HeroService } from './hero.service';
 import { HttpModule } from '@angular/http';
+import { HeroSearchComponent } from './hero-search.component';
+import { HeroSearchService } from './hero-search.service';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -28,13 +30,14 @@ import { AppComponent } from './app.component';
   declarations: [
     // Houses components, directives and pipes (view classes)
     AppComponent,
+    DashboardComponent,
     HeroDetailComponent,
     HeroesComponent,
-    DashboardComponent
+    HeroSearchComponent
   ],
 
   bootstrap: [AppComponent], // The main application view (root component). Only the root module should set the bootstrap prop.
 
-  providers: [HeroService] // Creators of services
+  providers: [HeroService, HeroSearchService] // Creators of services
 })
 export class AppModule { }
